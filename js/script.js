@@ -1,7 +1,14 @@
-function sayMyName(name) {
-    alert('My name is ' +  name);
-}
+function changeColor() {
+    var currentClassName = document.getElementById('cool').className;
 
+    // Changing Class Name
+    if (currentClassName == 'cool') {
+        document.getElementById('cool').className = 'cool red';
+    } else { // Change back to initial cool
+        document.getElementById('cool').className = 'cool';
+    }
+
+}
 
 var car = {
     make: 'Dodge',
@@ -31,5 +38,3 @@ var car = {
         }
     }
 };
-
-console.log('hello there friends!');
